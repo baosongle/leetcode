@@ -1,6 +1,6 @@
 package contest.contest122;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class IntervalListIntersectionsTest {
     private IntervalListIntersections solution = new IntervalListIntersections();

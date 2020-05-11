@@ -1,7 +1,7 @@
 package intermediate;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,13 +14,13 @@ public class GenerateParenthesesTest {
 	@Test
 	public void test1() {
 		Set<String> expected = new HashSet<>(Collections.singleton("()"));
-		Assertions.assertEquals(expected, new HashSet<>(solution.generateParenthesis(1)));
+		Assert.assertEquals(expected, new HashSet<>(solution.generateParenthesis(1)));
 	}
 
 	@Test
 	public void test2() {
 		Set<String> expected = new HashSet<>(Arrays.asList("()()", "(())"));
-		Assertions.assertEquals(expected, new HashSet<>(solution.generateParenthesis(2)));
+		Assert.assertEquals(expected, new HashSet<>(solution.generateParenthesis(2)));
 	}
 
 	@Test
@@ -32,6 +32,6 @@ public class GenerateParenthesesTest {
 				"()(())",
 				"()()()")
 		);
-		Assertions.assertEquals(expected, new HashSet<>(solution.generateParenthesis(3)));
+		Assert.assertEquals(expected, new HashSet<>(solution.generateParenthesis(3)));
 	}
 }

@@ -1,15 +1,15 @@
 package easy;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class LongestCommonPrefixTest {
 	private LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
 
 	@Test
 	public void test() {
-		Assertions.assertEquals("fl", longestCommonPrefix.longestCommonPrefix("flower","flow","flight"));
-		Assertions.assertEquals("", longestCommonPrefix.longestCommonPrefix("dog","racecar","car"));
-		Assertions.assertEquals("d", longestCommonPrefix.longestCommonPrefix("dog","dacecar","dar"));
+		Assert.assertEquals("fl", longestCommonPrefix.longestCommonPrefix("flower","flow","flight"));
+		Assert.assertEquals("", longestCommonPrefix.longestCommonPrefix("dog","racecar","car"));
+		Assert.assertEquals("d", longestCommonPrefix.longestCommonPrefix("dog","dacecar","dar"));
 	}
 }

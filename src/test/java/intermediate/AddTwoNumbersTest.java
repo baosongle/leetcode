@@ -1,16 +1,16 @@
 package intermediate;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class AddTwoNumbersTest {
     private AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
 
     @Test
     public void test1() {
-        Assertions.assertEquals("3-4-2", addTwoNumbers.format(format(243)));
-        Assertions.assertEquals("1-9-9-9", addTwoNumbers.format(format(9991)));
-        Assertions.assertEquals("0", addTwoNumbers.format(format(0)));
+        Assert.assertEquals("3-4-2", addTwoNumbers.format(format(243)));
+        Assert.assertEquals("1-9-9-9", addTwoNumbers.format(format(9991)));
+        Assert.assertEquals("0", addTwoNumbers.format(format(0)));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class AddTwoNumbersTest {
         AddTwoNumbers.ListNode l1 = format(n1);
         AddTwoNumbers.ListNode l2 = format(n2);
         AddTwoNumbers.ListNode l3 = addTwoNumbers.addTwoNumbers(l1, l2);
-        Assertions.assertEquals(result, addTwoNumbers.format(l3));
+        Assert.assertEquals(result, addTwoNumbers.format(l3));
     }
 
     private AddTwoNumbers.ListNode format(int n) {

@@ -1,7 +1,7 @@
 package easy;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SameTreeTest {
     private SameTree solution = new SameTree();
@@ -11,7 +11,7 @@ public class SameTreeTest {
         SameTree.TreeNode p = new SameTree.TreeNode(1);
         SameTree.TreeNode q = new SameTree.TreeNode(1);
 
-        Assertions.assertTrue(solution.isSameTree(p, q));
+        Assert.assertTrue(solution.isSameTree(p, q));
     }
 
     @Test
@@ -21,7 +21,7 @@ public class SameTreeTest {
         SameTree.TreeNode q = new SameTree.TreeNode(1);
         q.left = new SameTree.TreeNode(2);
 
-        Assertions.assertTrue(solution.isSameTree(p, q));
+        Assert.assertTrue(solution.isSameTree(p, q));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class SameTreeTest {
         q.left = new SameTree.TreeNode(2);
         q.right = new SameTree.TreeNode(3);
 
-        Assertions.assertTrue(solution.isSameTree(p, q));
+        Assert.assertTrue(solution.isSameTree(p, q));
     }
 
     @Test
@@ -46,7 +46,7 @@ public class SameTreeTest {
         q.left = new SameTree.TreeNode(2);
         q.right = new SameTree.TreeNode(3);
 
-        Assertions.assertFalse(solution.isSameTree(p, q));
+        Assert.assertFalse(solution.isSameTree(p, q));
     }
 
     @Test
@@ -58,7 +58,7 @@ public class SameTreeTest {
         SameTree.TreeNode q = new SameTree.TreeNode(1);
         q.right = new SameTree.TreeNode(3);
 
-        Assertions.assertFalse(solution.isSameTree(p, q));
+        Assert.assertFalse(solution.isSameTree(p, q));
     }
 
     @Test
@@ -70,18 +70,18 @@ public class SameTreeTest {
         SameTree.TreeNode q = new SameTree.TreeNode(1);
         q.right = new SameTree.TreeNode(3);
 
-        Assertions.assertFalse(solution.isSameTree(p, q));
+        Assert.assertFalse(solution.isSameTree(p, q));
     }
 
     @Test
     public void test6() {
-        Assertions.assertTrue(solution.isSameTree(null, null));
+        Assert.assertTrue(solution.isSameTree(null, null));
     }
 
     @Test
     public void test7() {
         SameTree.TreeNode p = new SameTree.TreeNode(1);
-        Assertions.assertFalse(solution.isSameTree(p, null));
+        Assert.assertFalse(solution.isSameTree(p, null));
     }
 
     @Test
@@ -94,7 +94,7 @@ public class SameTreeTest {
         q.left = new SameTree.TreeNode(2);
         q.right = new SameTree.TreeNode(3);
 
-        Assertions.assertFalse(solution.isSameTree(p, q));
+        Assert.assertFalse(solution.isSameTree(p, q));
     }
 
     @Test
@@ -107,6 +107,6 @@ public class SameTreeTest {
         q.left = new SameTree.TreeNode(2);
         q.right = new SameTree.TreeNode(3);
 
-        Assertions.assertFalse(solution.isSameTree(p, q));
+        Assert.assertFalse(solution.isSameTree(p, q));
     }
 }
