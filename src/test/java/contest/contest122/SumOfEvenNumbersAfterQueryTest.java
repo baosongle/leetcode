@@ -1,7 +1,7 @@
 package contest.contest122;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SumOfEvenNumbersAfterQueryTest {
     private SumOfEvenNumbersAfterQueries solution = new SumOfEvenNumbersAfterQueries();
@@ -15,7 +15,7 @@ public class SumOfEvenNumbersAfterQueryTest {
         int[] actual = solution.sumEvenAfterQueries(A, queries);
 
         for (int i = 0; i < expected.length; i++) {
-            Assertions.assertEquals(expected[i], actual[i]);
+            Assert.assertEquals(expected[i], actual[i]);
         }
     }
 }

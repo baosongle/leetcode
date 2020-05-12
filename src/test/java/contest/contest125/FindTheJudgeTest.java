@@ -1,7 +1,7 @@
 package contest.contest125;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class FindTheJudgeTest {
 	private FindTheTownJudge solution = new FindTheTownJudge();
@@ -11,7 +11,7 @@ public class FindTheJudgeTest {
 		int N = 2;
 		int[][] trust = {{1, 2}};
 
-		Assertions.assertEquals(2, solution.findJudge(N, trust));
+		Assert.assertEquals(2, solution.findJudge(N, trust));
 	}
 
 	@Test
@@ -19,7 +19,7 @@ public class FindTheJudgeTest {
 		int N = 3;
 		int[][] trust = {{1, 3}, {2, 3}};
 
-		Assertions.assertEquals(3, solution.findJudge(N, trust));
+		Assert.assertEquals(3, solution.findJudge(N, trust));
 	}
 
 	@Test
@@ -27,7 +27,7 @@ public class FindTheJudgeTest {
 		int N = 3;
 		int[][] trust = {{1, 3}, {2, 3}, {3, 1}};
 
-		Assertions.assertEquals(-1, solution.findJudge(N, trust));
+		Assert.assertEquals(-1, solution.findJudge(N, trust));
 	}
 
 	@Test
@@ -35,6 +35,6 @@ public class FindTheJudgeTest {
 		int N = 4;
 		int[][] trust = {{1, 3}, {1, 4}, {2, 3}, {2, 4}, {4, 3}};
 
-		Assertions.assertEquals(3, solution.findJudge(N, trust));
+		Assert.assertEquals(3, solution.findJudge(N, trust));
 	}
 }

@@ -1,7 +1,7 @@
 package contest.contest124;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class NumberOfSquarefulArraysTest {
 	private NumberOfSquarefulArrays solution = new NumberOfSquarefulArrays();
@@ -9,6 +9,6 @@ public class NumberOfSquarefulArraysTest {
 	@Test
 	public void test() {
 		int[] A = {1, 17, 8};
-		Assertions.assertEquals(2, solution.numSquarefulPerms(A));
+		Assert.assertEquals(2, solution.numSquarefulPerms(A));
 	}
 }

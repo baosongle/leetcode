@@ -1,6 +1,6 @@
 package contest.contest127;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class ConstructBinarySearchTreeFromPreorderTraversalTest {
 	private ConstructBinarySearchTreeFromPreorderTraversal solution = new ConstructBinarySearchTreeFromPreorderTraversal();

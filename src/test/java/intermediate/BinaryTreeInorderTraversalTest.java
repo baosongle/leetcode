@@ -1,7 +1,7 @@
 package intermediate;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class BinaryTreeInorderTraversalTest {
 
     @Test
     public void test0() {
-        Assertions.assertEquals(new ArrayList<>(), solution.inorderTraversal(null));
+        Assert.assertEquals(new ArrayList<>(), solution.inorderTraversal(null));
     }
 
     @Test
@@ -20,7 +20,7 @@ public class BinaryTreeInorderTraversalTest {
         list.add(1);
 
         BinaryTreeInorderTraversal.TreeNode root = new BinaryTreeInorderTraversal.TreeNode(1);
-        Assertions.assertEquals(list, solution.inorderTraversal(root));
+        Assert.assertEquals(list, solution.inorderTraversal(root));
     }
 
     @Test
@@ -31,7 +31,7 @@ public class BinaryTreeInorderTraversalTest {
 
         BinaryTreeInorderTraversal.TreeNode root = new BinaryTreeInorderTraversal.TreeNode(1);
         root.left = new BinaryTreeInorderTraversal.TreeNode(2);
-        Assertions.assertEquals(list, solution.inorderTraversal(root));
+        Assert.assertEquals(list, solution.inorderTraversal(root));
     }
 
     @Test
@@ -44,7 +44,7 @@ public class BinaryTreeInorderTraversalTest {
         BinaryTreeInorderTraversal.TreeNode root = new BinaryTreeInorderTraversal.TreeNode(2);
         root.left = new BinaryTreeInorderTraversal.TreeNode(3);
         root.right = new BinaryTreeInorderTraversal.TreeNode(1);
-        Assertions.assertEquals(list, solution.inorderTraversal(root));
+        Assert.assertEquals(list, solution.inorderTraversal(root));
     }
 
     @Test
@@ -59,6 +59,6 @@ public class BinaryTreeInorderTraversalTest {
         root.left = new BinaryTreeInorderTraversal.TreeNode(3);
         root.right = new BinaryTreeInorderTraversal.TreeNode(1);
         root.left.left = new BinaryTreeInorderTraversal.TreeNode(4);
-        Assertions.assertEquals(list, solution.inorderTraversal(root));
+        Assert.assertEquals(list, solution.inorderTraversal(root));
     }
 }

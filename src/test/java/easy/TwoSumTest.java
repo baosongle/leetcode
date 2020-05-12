@@ -1,7 +1,7 @@
 package easy;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class TwoSumTest {
     private TwoSum twoSum = new TwoSum();
@@ -12,8 +12,8 @@ public class TwoSumTest {
         int target = 9;
         int[] result = twoSum.twoSum(sums, target);
 
-        Assertions.assertEquals(result[0], 0);
-        Assertions.assertEquals(result[1], 1);
+        Assert.assertEquals(result[0], 0);
+        Assert.assertEquals(result[1], 1);
     }
 
     @Test
@@ -22,8 +22,8 @@ public class TwoSumTest {
         int target = 18;
         int[] result = twoSum.twoSum(sums, target);
 
-        Assertions.assertEquals(result[0], 1);
-        Assertions.assertEquals(result[1], 2);
+        Assert.assertEquals(result[0], 1);
+        Assert.assertEquals(result[1], 2);
     }
 
     @Test
@@ -32,8 +32,8 @@ public class TwoSumTest {
         int target = 17;
         int[] result = twoSum.twoSum(sums, target);
 
-        Assertions.assertEquals(result[0], 0);
-        Assertions.assertEquals(result[1], 3);
+        Assert.assertEquals(result[0], 0);
+        Assert.assertEquals(result[1], 3);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class TwoSumTest {
         int target = 21;
         int[] result = twoSum.twoSum(sums, target);
 
-        Assertions.assertEquals(result[0], 3);
-        Assertions.assertEquals(result[1], 4);
+        Assert.assertEquals(result[0], 3);
+        Assert.assertEquals(result[1], 4);
     }
 }

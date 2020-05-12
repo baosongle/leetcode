@@ -1,7 +1,7 @@
 package intermediate;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 import support.tree.TreeGenerator;
 import support.tree.TreeNode;
 
@@ -12,6 +12,6 @@ public class RangeSumOfBstTest {
 	public void test0() {
 		TreeGenerator generator = new TreeGenerator(15, 0, 100, 1);
 		TreeNode root = generator.randomTree();
-		Assertions.assertEquals(731, solution.rangeSumBST(root, 13, 88));
+		Assert.assertEquals(731, solution.rangeSumBST(root, 13, 88));
 	}
 }

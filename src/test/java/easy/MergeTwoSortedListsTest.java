@@ -1,7 +1,7 @@
 package easy;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class MergeTwoSortedListsTest {
     private MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
@@ -17,11 +17,11 @@ public class MergeTwoSortedListsTest {
         l2.next.next = new MergeTwoSortedLists.ListNode(4);
 
         MergeTwoSortedLists.ListNode l3 = mergeTwoSortedLists.mergeTwoLists(l1, l2);
-        Assertions.assertEquals(1, l3.val);
-        Assertions.assertEquals(1, l3.next.val);
-        Assertions.assertEquals(2, l3.next.next.val);
-        Assertions.assertEquals(3, l3.next.next.next.val);
-        Assertions.assertEquals(4, l3.next.next.next.next.val);
-        Assertions.assertEquals(4, l3.next.next.next.next.next.val);
+        Assert.assertEquals(1, l3.val);
+        Assert.assertEquals(1, l3.next.val);
+        Assert.assertEquals(2, l3.next.next.val);
+        Assert.assertEquals(3, l3.next.next.next.val);
+        Assert.assertEquals(4, l3.next.next.next.next.val);
+        Assert.assertEquals(4, l3.next.next.next.next.next.val);
     }
 }
