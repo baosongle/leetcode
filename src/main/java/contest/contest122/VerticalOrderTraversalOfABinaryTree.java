@@ -1,5 +1,7 @@
 package contest.contest122;
 
+import support.tree.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -41,15 +43,5 @@ public class VerticalOrderTraversalOfABinaryTree {
             transvers(map, node.left, key - 1);
         if (node.right != null)
             transvers(map, node.right, key + 1);
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }
